@@ -17,13 +17,14 @@
     <script>
         pannellum.viewer('panorama', {
             "type": "equirectangular",
-            "panorama": "panorama.jpg",  <!-- Your image name here -->
+            "panorama": "panorama.jpg",  // Your image name here
             "autoLoad": true,
             "showZoomCtrl": true,
-            "yawMin": -125,  // Limit the left rotation (-125 degrees)
-            "yawMax": 125,   // Limit the right rotation (125 degrees)
-            "hfov": 100,     // Field of View, can adjust this to your liking
-            "pitch": 0       // Vertical angle of the panorama
+            "yaw": 0,                    // Start at the center
+            "yawMin": -125,              // Minimum rotation -125 degrees (left limit)
+            "yawMax": 125,               // Maximum rotation 125 degrees (right limit)
+            "hfov": 100,                 // Field of view (can adjust this as needed)
+            "pitch": 0                   // Set vertical pitch (optional)
         });
     </script>
 </body>
