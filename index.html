@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360° Panorama Viewer</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+    <style>
+        body { margin: 0; }
+        #panorama { width: 100vw; height: 100vh; }
+    </style>
+</head>
+<body>
+    <div id="panorama"></div>
+    
+    <script>
+        pannellum.viewer('panorama', {
+            "type": "equirectangular",
+            "panorama": "panorama.jpg",  <!-- Your image name here -->
+            "autoLoad": true,
+            "showZoomCtrl": true
+        });
+    </script>
+</body>
+</html>
