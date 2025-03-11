@@ -20,11 +20,9 @@
             "panorama": "panorama.jpg",  // Your image name here
             "autoLoad": true,
             "showZoomCtrl": true,
-            "yaw": 0,                    // Start at the center
-            "yawMin": -125,              // Minimum rotation -125 degrees (left limit)
-            "yawMax": 125,               // Maximum rotation 125 degrees (right limit)
-            "hfov": 100,                 // Field of view (can adjust this as needed)
-            "pitch": 0                   // Set vertical pitch (optional)
+            "maxYaw": 90,  // Limit right rotation to 125 degrees
+            "minYaw": 90, // Limit left rotation to -125 degrees (total 250 degrees horizontal)
+            "yaw": 0        // Start view at the center
         });
     </script>
 </body>
